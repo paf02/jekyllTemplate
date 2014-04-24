@@ -1,5 +1,7 @@
 source "http://rubygems.org"
 
-gem 'jekyll', '~>1.4.0'
 gem 'redcarpet'
-gem 'compass', '>=0.12'
+gem "sass", '~> 3.3.0'
+gem 'susy', '~> 2.1.1'
+gem 'compass', '~> 1.0.0.alpha.19'
+gem "jekyll", '~> 1.2.1'
