@@ -1,6 +1,8 @@
 {
   "name": "jekylltemplate",
   "version": "0.0.0",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "breakpoint-sass": "~2.4.2"
   }
 }

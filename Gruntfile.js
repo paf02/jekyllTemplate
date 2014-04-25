@@ -104,7 +104,7 @@ module.exports = function (grunt) {
     },
     compass: {
       options: {
-        require: 'susy',
+        require: ['susy', 'breakpoint'],
         // If you're using global Sass gems, require them here.
         // require: ['singularity', 'jacket'],
         bundleExec: true,
