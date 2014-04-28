@@ -1,10 +1,34 @@
 $susy: (
     columns: 12,
     gutters: 1/4,
+    math: fluid,
+    output: float,
+    gutter-position: split,
 );
+$wideLayout: (
+    columns: 24,
+    gutters: 1/4,
+    math: fluid,
+    output: float,
+    gutter-position: split,
+);
+
+
+// @include layout($wideLayout);
+//columns //colum width //gutter width  //output
+              //c  //wc //g    //gp //output
+//@include layout(12 (60px 10px) split static);
+
 
 body {
     background: #eee;
+
+
+    //static
+    //@include container(960);
+    //static
+
+
     @include container(80%);
 }
 
@@ -29,7 +53,30 @@ aside ul {
     }
 }
 
+@include breakpoint(500px) {
+    main {
+        @include span(8);
+    }
 
+    aside {
+        @include span(4 at 9);
+    }
+}
+
+@include breakpoint(1200px) {
+    @include layout(24);
+
+    main {
+        @include span(21);
+        .col1, .col2, .col3 {
+            @include span(8);
+        }
+    }
+
+    aside {
+        @include span(3 at 21);
+    }
+}
 
 
 
